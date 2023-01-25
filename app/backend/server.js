@@ -2,9 +2,6 @@
 const express = require('express')
 const dotenv = require('dotenv').config()
 const port = process.env.PORT || 5000
-const connectDb = require('./config/db')
-
-connectDb()
 
 // Couleur dans la console
 const colors = require('colors')
@@ -21,7 +18,6 @@ app.use(express.urlencoded())
 // Routes
 app.use('/api/pokemons', require('./routes/pokemons'))
 app.use('/api/abilities', require('./routes/abilities'))
-app.use('/api/types', require('./routes/types'))
 
 
 // lancement serveur

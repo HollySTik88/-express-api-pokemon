@@ -1,21 +1,19 @@
 {
-  "name": "express-course",
+  "name": "express-course-descargots",
   "version": "1.0.0",
-  "description": "Reach your goals faster than ever",
+  "description": "Reach your goals faster than ever even in the wind of the skies",
   "main": "server.js",
   "scripts": {
     "start": "node backend/server.js",
     "server": "node --watch backend/server.js"
   },
-  "author": "jaupitre",
+  "author": "jaupitre & fils",
   "license": "MIT",
   "dependencies": {
     "colors": "^1.4.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
-    "mongoose": "^6.8.4",
-    "mysql": "^2.18.1",
     "pg": "^8.8.0"
   }
 }
