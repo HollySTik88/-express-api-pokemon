@@ -2,7 +2,7 @@ const db = require('../services/db')
 const config = require('../config/db')
 
 async function getAll() {
-    const request = "SELECT description, puissance, precision, pp_max, type, nom, classe FROM abilities"
+    const request = "SELECT id,description, puissance, precision, pp_max, type, nom, classe FROM abilities"
     return await db.query(request)
 }
 async function update(ability){
